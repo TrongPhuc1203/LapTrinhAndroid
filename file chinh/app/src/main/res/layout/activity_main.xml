@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_2"
+    >
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:contentDescription="icon cua hang"
+        android:src="@drawable/book_shop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txtCuaHang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Cửa hàng bán sách Online"
+            android:textSize="24sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Danh sách các thể loại hàng"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Giỏ hàng"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnLichSuDH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Lịch sử đơn hàng"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnDangXuat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Đăng Xuất"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+
+
+
+</LinearLayout>
