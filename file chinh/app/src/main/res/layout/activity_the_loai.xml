@@ -11,6 +11,93 @@
     android:background="@drawable/background_2">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txtTheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Thể loại sách"
+            android:textSize="24sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTuDuyKNS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Tư duy - Kỹ năng sống"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnVanHoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Văn học"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnThieuNhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Thiếu nhi"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnSachLamChaMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Sách làm Cha Mẹ"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnTamLinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Tâm Linh"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btnLichSu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:text="Lịch Sử"
+        android:textSize="20sp"
+        android:textStyle="bold">
+    </Button>
+
+
 
 
 

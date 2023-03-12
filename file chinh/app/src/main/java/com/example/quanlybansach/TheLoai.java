@@ -12,8 +12,6 @@ import android.window.SplashScreen;
 
 public class TheLoai extends AppCompatActivity {
 
-
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
