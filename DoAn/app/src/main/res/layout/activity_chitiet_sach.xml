@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/img_sach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/h2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_1">
+                <ScrollView
+                    android:id="@+id/scv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:scrollbars="none"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/ll_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/txt_sach"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/bevietnambold"
+                                    android:gravity="center"
+                                    android:maxLines="2"
+                                    android:minLines="1"
+                                    android:paddingTop="4dp"
+                                    android:text="Không bao giờ là thất bại! Tất cả chỉ là thử thách"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_TacGia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bevietnamregular1"
+                                    android:gravity="center"
+                                    android:paddingTop="4dp"
+                                    android:text="tác giả"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_Gia"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bevietnambold"
+                                    android:gravity="center"
+                                    android:paddingTop="4dp"
+                                    android:text="100 000"
+                                    android:textColor="@color/warningText"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+                            <RelativeLayout
+                                android:id="@+id/rll_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:layout_constraintTop_toBottomOf="@id/ll_3"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent">
+
+                                <TextView
+                                    android:id="@+id/lbl_SoLuong"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bevietnamregular1"
+                                    android:text="Số lượng mua"
+                                    android:paddingTop="10dp"
+                                    android:textColor="@color/grayTextLight"
+                                    android:textSize="14sp" />
+                                <EditText
+                                    android:id="@+id/txt_SoLuongMua"
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bevietnamregular1"
+                                    android:layout_toStartOf="@+id/imgbtn_Them"
+                                    android:text="0"
+                                    android:textSize="16sp"
+                                    android:inputType="number"
+                                    android:gravity="center"
+                                    />
+                                <ImageButton
+                                    android:id="@+id/imgbtn_Them"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_add_circle_24"
+                                    android:background="@color/opacity"
+                                    android:paddingTop="10dp"
+                                    />
+
+                                <ImageButton
+                                    android:id="@+id/imgbtn_Xoa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toStartOf="@+id/txt_SoLuongMua"
+                                    android:background="@color/opacity"
+                                    android:paddingTop="10dp"
+                                    android:src="@drawable/ic_add_circle_24" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txt_ThanhNgang"
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:background="@color/grayLine"
+                                app:layout_constraintTop_toBottomOf="@+id/rll_1"/>
+
+                            <TextView
+                                android:id="@+id/lbl_GioiThieu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Giới thiệu"
+                                android:fontFamily="@font/bevietnambold"
+                                android:textColor="@color/grayText"
+                                android:textSize="14sp"
+                                app:layout_constraintTop_toBottomOf="@+id/rll_1"/>
+
+                            <TextView
+                                android:id="@+id/txt_GioiThieu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bevietnamregular1"
+                                android:inputType="textMultiLine"
+                                android:text="   Tự truyện nổi tiếng của gã khổng lồ trong nền kinh tế Hàn Quốc – cố Chủ tịch tập đoàn Hyundai Chung Ju-yung
+                               Thất bại xảy ra là để con người nhận ra sức mạnh nội tại của bản thân, bởi không ai sống mà chỉ trải qua những thành công trong suốt cuộc đời. Tuy vậy, ta vẫn luôn băn khoăn tự hỏi bản thân rằng bao nhiêu lần thất bại mới đủ để thành công?
+                               Mỗi người đều có định nghĩa khác nhau về thành công. Nó có thể được hiểu là đạt được mục tiêu đã đề ra, nhưng ở một góc nhìn khác thì thành công chính là rút ra được kinh nghiệm và hiên ngang bước tiếp sau những lần thất bại. Việc thấu hiểu bản chất của thành công lẫn thất bại đòi hỏi ý chí và tầm nhìn của chính bản thân người trải nghiệm. Chung Ju-yung – người khởi nghiệp từ hai bàn tay trắng đã trở thành chủ tịch của Hyundai, một tập đoàn nổi tiếng trên thế giới và là niềm tự hào của người dân Hàn Quốc – có lẽ hơn ai hết sẽ thấu hiểu những vất vả, thử thách và bài học xương máu trên con đường chinh phục đỉnh vinh quang của mình.“Không bao giờ là thất bại! Tất cả là thử thách” được xem như cuốn tự truyện chi tiết về cuộc đời lẫn sự nghiệp của cố Chủ tịch Chung Ju-yung. Không chỉ thuật lại hành trình tạo lập nên một tập đoàn công nghiệp phát triển bậc nhất, cuốn sách còn chứa đựng những bài học sâu sắc về quản trị, kinh doanh cũng như đạo làm người với tinh thần “đắc nhân tâm”. Đây chính là cuốn sách gối đầu giường của rất nhiều doanh nhân Việt Nam.
+
+                               “Không bao giờ là thất bại! Tất cả là thử thách”, ấn phẩm đã được tái bản nhiều lần tại Việt Nam và không còn đơn thuần là tựa đề của một cuốn sách, tên của nó đã trở thành phương châm sống, truyền cảm hứng cho rất nhiều bạn trẻ.
+                    Qua từng trang hồi ký, người đọc sẽ cảm nhận được tuổi thơ nghèo khó và khát khao làm giàu của cố Chủ tịch Tập đoàn Hyundai: ba lần trốn chạy khỏi gia đình và quê nhà với khát khao thoát khỏi cuộc sống vất vả của người làm nông. Đặc biệt, ông gây dựng cơ nghiệp từ xuất phát điểm không một đồng xu dính túi. Con đường vươn đến thành công của ông Chung hoàn toàn không êm ả. Khi vừa lập nghiệp với đôi chút thành tựu, ông lại gặp biến cố và trở về vạch xuất phát. Thế nhưng, điều quan trọng là con người ấy không bao giờ nghĩ mình thất bại."
+                                android:textColor="@color/grayTextLight"
+                                android:textSize="14sp"
+                                app:layout_constraintTop_toBottomOf="@+id/lbl_GioiThieu"
+                                tools:layout_editor_absoluteX="0dp" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </ScrollView>
+
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLine"
+        app:layout_constraintBottom_toTopOf="@+id/tbl_app" />
+    <TableLayout
+        android:id="@+id/tbl_app"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/imgbtn_TrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/opacity"
+                android:src="@drawable/ic_add_cart" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="50dp">
+                <Button
+                    android:id="@+id/imgbtn_Dao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/blueButton"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/bevietnamregular1"
+                    android:textColor="@color/white"
+                    android:text="Mua hàng" />
+            </androidx.cardview.widget.CardView>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+<!--    Lớp để bù phần footer che-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

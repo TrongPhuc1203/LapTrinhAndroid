@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_sach"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:src="@drawable/h2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_sach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnamregular1"
+        android:ellipsize="end"
+        android:minLines="2"
+        android:maxLines="2"
+        android:text="a"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:paddingTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_sach"
+        app:layout_constraintStart_toStartOf="@+id/img_sach"
+        app:layout_constraintTop_toBottomOf="@+id/img_sach" />
+
+    <TextView
+        android:id="@+id/txt_Gia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnambold"
+        android:paddingTop="4dp"
+        android:text="7777"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_sach"
+        app:layout_constraintStart_toStartOf="@+id/txt_sach"
+        app:layout_constraintTop_toBottomOf="@+id/txt_sach" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/txt_GiDo"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:fontFamily="@font/bevietnambold"-->
+    <!--        android:paddingTop="4dp"-->
+    <!--        android:text=""-->
+    <!--        android:gravity="left"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/txt_Gia"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/txt_Gia"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/txt_Gia" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        android:background="@drawable/gradient"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50pt"-->
+<!--        android:background="@color/endColor"-->
+
+<!--        />-->
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:src="@drawable/icon_book"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/opacity"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/opacity"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_ChaoMung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnambold"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:lineHeight="40dp"
+            android:gravity="center_horizontal"
+            android:text="Chào mừng bạn đến với Chợ Sách"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:background="@color/opacity"
+            />
+        <TextView
+            android:id="@+id/txt_Phu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ChaoMung"
+            android:fontFamily="@font/bevietnamregular1"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:text="Khởi nguồn của tri thức "
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:backgroundTint="@color/opacity">
+
+        <Button
+            android:id="@+id/btn_DangNhap"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="79dp"
+            android:backgroundTint="@color/blueButton"
+            android:fontFamily="@font/bevietnamregular1"
+            android:gravity="center|center_vertical"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:cornerRadius="3px"
+            android:textStyle="normal"
+            android:visibility="visible"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_DangKy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/btn_DangNhap"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/bevietnamregular1"
+            android:gravity="center|center_vertical"
+            android:text="Tạo tài khoản"
+            android:textAllCaps="false"
+            android:textColor="@color/grayText"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            app:cornerRadius="3px"
+            app:strokeColor="@color/grayText"
+            app:strokeWidth="1px"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

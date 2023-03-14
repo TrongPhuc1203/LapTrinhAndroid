@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    // Màu chuyên dụng
+
+    <color name="starColor">#E6009FFF</color>
+    <color name="centerColor">#4D009FFF</color>
+    <color name="starColorLight">#80009FFF</color>
+    <color name="endColor">#FFFFFF</color>
+    <color name="bgWhite45">#73FFFFFF</color>
+    <color name="grayText">#666666</color>
+    <color name="grayTextLight">#CC666666</color>
+    <color name="blueButton">#009FFF</color>
+    <color name="grayLine">#979797</color>
+    <color name="warningText">#FF4141</color>
+    <color name="opacity">#00FFFFFF</color>
+</resources>

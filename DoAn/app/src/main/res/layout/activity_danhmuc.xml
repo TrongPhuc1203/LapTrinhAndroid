@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_TheLoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnambold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="Thể loại"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/cuon_ngang_1"
+        android:layout_width="409dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TheLoai">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+
+            <!--            Hàng 1-->
+            <!--            1-->
+            <ImageButton
+                android:id="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Giáo trình"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+            <!--            2-->
+            <ImageButton
+                android:id="@+id/img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintStart_toEndOf="@id/img1"
+                app:layout_constraintTop_toTopOf="@id/img1"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Thiếu nhi"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img2"
+                app:layout_constraintStart_toStartOf="@id/img2"
+                app:layout_constraintTop_toBottomOf="@+id/img2" />
+
+            <!--            3-->
+            <ImageButton
+                android:id="@+id/img3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintStart_toEndOf="@id/img2"
+                app:layout_constraintTop_toTopOf="@id/img2"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Văn học"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img3"
+                app:layout_constraintStart_toStartOf="@id/img3"
+                app:layout_constraintTop_toBottomOf="@+id/img3" />
+
+            <!--            4-->
+            <ImageButton
+                android:id="@+id/img4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintStart_toEndOf="@id/img3"
+                app:layout_constraintTop_toTopOf="@id/img3"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img4"
+                app:layout_constraintStart_toStartOf="@id/img4"
+                app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+            <!--            5-->
+            <ImageButton
+                android:id="@+id/img51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintStart_toEndOf="@id/img4"
+                app:layout_constraintTop_toTopOf="@id/img4"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img51"
+                app:layout_constraintStart_toStartOf="@id/img51"
+                app:layout_constraintTop_toBottomOf="@+id/img51" />
+
+            <!--            6-->
+            <ImageButton
+                android:id="@+id/img61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintStart_toEndOf="@id/img51"
+                app:layout_constraintTop_toTopOf="@id/img51"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img61"
+                app:layout_constraintStart_toStartOf="@id/img61"
+                app:layout_constraintTop_toBottomOf="@+id/img61" />
+
+            <!--            Hàng 2-->
+            <!--            1-->
+            <ImageButton
+                android:id="@+id/img5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintEnd_toEndOf="@+id/img1"
+                app:layout_constraintStart_toStartOf="@+id/img1"
+                app:layout_constraintTop_toBottomOf="@id/txt_TheLoai1"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img5"
+                app:layout_constraintStart_toStartOf="@id/img5"
+                app:layout_constraintTop_toBottomOf="@+id/img5" />
+
+            <!--            2-->
+            <ImageButton
+                android:id="@+id/img6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintEnd_toEndOf="@+id/img2"
+                app:layout_constraintStart_toStartOf="@+id/img2"
+                app:layout_constraintTop_toBottomOf="@id/txt_TheLoai2"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img6"
+                app:layout_constraintStart_toStartOf="@id/img6"
+                app:layout_constraintTop_toBottomOf="@+id/img6" />
+
+            <!--            3-->
+            <ImageButton
+                android:id="@+id/img7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintEnd_toEndOf="@+id/img3"
+                app:layout_constraintStart_toStartOf="@+id/img3"
+                app:layout_constraintTop_toBottomOf="@id/txt_TheLoai3"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img7"
+                app:layout_constraintStart_toStartOf="@id/img7"
+                app:layout_constraintTop_toBottomOf="@+id/img7" />
+
+            <!--            4-->
+            <ImageButton
+                android:id="@+id/img8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintEnd_toEndOf="@+id/img4"
+                app:layout_constraintStart_toStartOf="@+id/img4"
+                app:layout_constraintTop_toBottomOf="@id/txt_TheLoai4"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img8"
+                app:layout_constraintStart_toStartOf="@id/img8"
+                app:layout_constraintTop_toBottomOf="@+id/img8" />
+
+            <!--            5-->
+            <ImageButton
+                android:id="@+id/img91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintEnd_toEndOf="@+id/img51"
+                app:layout_constraintStart_toStartOf="@+id/img51"
+                app:layout_constraintTop_toBottomOf="@id/txt_TheLoai51"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img91"
+                app:layout_constraintStart_toStartOf="@id/img91"
+                app:layout_constraintTop_toBottomOf="@+id/img91" />
+
+            <!--            6-->
+            <ImageButton
+                android:id="@+id/img92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/starColorLight"
+                app:layout_constraintEnd_toEndOf="@+id/img61"
+                app:layout_constraintStart_toStartOf="@+id/img61"
+                app:layout_constraintTop_toBottomOf="@id/txt_TheLoai61"
+                app:srcCompat="@drawable/theloai_sach" />
+
+            <TextView
+                android:id="@+id/txt_TheLoai92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/bevietnamregular1"
+                android:text="Tâm lý"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="@+id/img92"
+                app:layout_constraintStart_toStartOf="@id/img92"
+                app:layout_constraintTop_toBottomOf="@+id/img92" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/txt_ThinhHanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnambold"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Thịnh hành"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/txt_TheLoai"
+        app:layout_constraintTop_toBottomOf="@id/cuon_ngang_1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ThinhHanh">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_sach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/txt_DeXuat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bevietnambold"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Đề xuất"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_sach_DeXuat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_DeXuat">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grayLine"
+        app:layout_constraintBottom_toTopOf="@+id/tbl_app"/>
+    <TableLayout
+        android:id="@+id/tbl_app"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/imgbtn_TrangChu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/opacity"
+                android:src="@drawable/ic_home_35" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_Dao"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/opacity"
+                android:src="@drawable/ic_category_24" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_GioHang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/opacity"
+                android:src="@drawable/ic_shopping_cart_35" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_TaiKhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/opacity"
+                android:src="@drawable/ic_account_circle_35" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Trang chủ"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Dạo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Giỏ hàng" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tài khoản" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/cuon_ngang_2"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:scrollbars="none"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txt_ThinhHanh">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="left">-->
+
+<!--            &lt;!&ndash;            Hàng 1&ndash;&gt;-->
+<!--            &lt;!&ndash;            1&ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/img1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:backgroundTint="@color/starColorLight"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/theloai_sach" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_TheLoai1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/bevietnamregular1"-->
+<!--                android:text="Giáo trình"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/img1"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/img1" />-->
+
+<!--            &lt;!&ndash;            2&ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/img2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:backgroundTint="@color/starColorLight"-->
+<!--                app:layout_constraintStart_toEndOf="@id/img1"-->
+<!--                app:layout_constraintTop_toTopOf="@id/img1"-->
+<!--                app:srcCompat="@drawable/theloai_sach" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_TheLoai2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/bevietnamregular1"-->
+<!--                android:text="Thiếu nhi"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/img2"-->
+<!--                app:layout_constraintStart_toStartOf="@id/img2"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/img2" />-->
+
+<!--            &lt;!&ndash;            3&ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/img3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:backgroundTint="@color/starColorLight"-->
+<!--                app:layout_constraintStart_toEndOf="@id/img2"-->
+<!--                app:layout_constraintTop_toTopOf="@id/img2"-->
+<!--                app:srcCompat="@drawable/theloai_sach" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_TheLoai3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/bevietnamregular1"-->
+<!--                android:text="Văn học"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/img3"-->
+<!--                app:layout_constraintStart_toStartOf="@id/img3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/img3" />-->
+
+<!--            &lt;!&ndash;            4&ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/img4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:backgroundTint="@color/starColorLight"-->
+<!--                app:layout_constraintStart_toEndOf="@id/img3"-->
+<!--                app:layout_constraintTop_toTopOf="@id/img3"-->
+<!--                app:srcCompat="@drawable/theloai_sach" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_TheLoai4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/bevietnamregular1"-->
+<!--                android:text="Tâm lý"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/img4"-->
+<!--                app:layout_constraintStart_toStartOf="@id/img4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/img4" />-->
+
+<!--            &lt;!&ndash;            5&ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/img51"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:backgroundTint="@color/starColorLight"-->
+<!--                app:layout_constraintStart_toEndOf="@id/img4"-->
+<!--                app:layout_constraintTop_toTopOf="@id/img4"-->
+<!--                app:srcCompat="@drawable/theloai_sach" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_TheLoai51"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/bevietnamregular1"-->
+<!--                android:text="Tâm lý"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/img51"-->
+<!--                app:layout_constraintStart_toStartOf="@id/img51"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/img51" />-->
+
+<!--            &lt;!&ndash;            6&ndash;&gt;-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/img61"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:backgroundTint="@color/starColorLight"-->
+<!--                app:layout_constraintStart_toEndOf="@id/img51"-->
+<!--                app:layout_constraintTop_toTopOf="@id/img51"-->
+<!--                app:srcCompat="@drawable/theloai_sach" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_TheLoai61"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:fontFamily="@font/bevietnamregular1"-->
+<!--                android:text="Tâm lý"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/img61"-->
+<!--                app:layout_constraintStart_toStartOf="@id/img61"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/img61" />-->
+
+
+
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </HorizontalScrollView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

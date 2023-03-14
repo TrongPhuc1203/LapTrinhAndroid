@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/gradientlight"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_TroVe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/opacity"
+                android:padding="5dp"
+                android:src="@drawable/ic_west_24_black" />
+
+            <TextView
+                android:id="@+id/txt_ThongTinTaiKhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/bevietnambold"
+                android:text="Thông tin tài khoản"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/grayLine" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img_khachhang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="60dp"
+                android:outlineAmbientShadowColor="@color/black"
+                android:outlineSpotShadowColor="@color/opacity">
+
+                <ImageView
+                    android:id="@+id/img_anhdaidien"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@color/grayLine"
+                    />
+                <ImageButton
+                    android:id="@+id/imgbtn_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera_35"
+                    android:layout_alignRight="@id/img_khachhang"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@color/opacity"
+                    android:padding="5dp"
+                    />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="45dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/txt_IdKhachHang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ID: 0265436"
+                        android:gravity="left"
+                        android:enabled="false"
+                        android:fontFamily="@font/bevietnamregular1"
+                        android:textColor="@color/grayLine"/>
+                    <ImageView
+                        android:id="@+id/img_checkDone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_alignRight="@id/txt_IdKhachHang"
+                        android:src="@drawable/ic_check_circle_24"
+                        />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_XacThuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@color/opacity"
+                    android:enabled="false"
+                    android:fontFamily="@font/bevietnammedium1"
+                    android:gravity="left"
+                    android:text="(Xác thực tài khoản)"
+                    android:textAllCaps="false"
+                    android:textColor="@color/warningText"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <EditText
+                android:id="@+id/txt_HoTen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Nguyễn Văn A"
+
+                android:fontFamily="@font/bevietnamregular1"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày sinh"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <EditText
+                android:id="@+id/txt_NgaySinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="01/01/2000"
+                android:fontFamily="@font/bevietnamregular1"
+                android:textSize="18sp"
+                android:ems="10"
+                android:inputType="date"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <EditText
+                android:id="@+id/txt_SoDienThoai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="0123456789"
+                android:fontFamily="@font/bevietnamregular1"
+                android:textSize="18sp"
+                android:ems="10"
+                android:inputType="phone"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <EditText
+                android:id="@+id/txt_DiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="3a đường số 3 Thạch Mỹ Lợi,Q2, Tp.HCM"
+                android:fontFamily="@font/bevietnamregular1"
+                android:textSize="18sp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <EditText
+                android:id="@+id/txt_DiaChi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" "
+                android:fontFamily="@font/bevietnamregular1"
+                android:textSize="18sp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/opacity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/opacity"
+            >
+            <Button
+                android:id="@+id/btn_Luu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/opacity"
+                android:fontFamily="@font/bevietnambold"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="Lưu thay đổi"
+                android:textAllCaps="false"
+                android:textColor="@color/blueButton"
+                android:textSize="18sp"
+                android:textStyle="normal"  />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

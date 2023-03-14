@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#ffffff"
+    android:stretchColumns="*"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/img_sach"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:src="@drawable/h2" />
+
+        <ImageView
+            android:id="@+id/img_sach1"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:src="@drawable/h3" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txt_sach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/bevietnamregular1"
+            android:maxLines="2"
+            android:minLines="1"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingRight="20dp"
+            android:text="Tên sách"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_sach1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/bevietnamregular1"
+            android:maxLines="2"
+            android:minLines="1"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingRight="20dp"
+            android:text="Tên sách"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txt_Gia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnambold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingRight="20dp"
+            android:text="Giá tiền"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_Gia1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnambold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingRight="20dp"
+            android:text="Giá tiền"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txt_Gia33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnamitalic"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="20dp"
+            android:text="Vote cho 5*"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_Gia44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnamitalic"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="20dp"
+            android:text="Vote cho 5*"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </TableRow>
+</TableLayout>

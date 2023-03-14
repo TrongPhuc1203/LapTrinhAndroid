@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        android:background="@color/opacity"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_TroVe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:padding="5dp"
+                android:background="@color/opacity"
+                android:src="@drawable/ic_west_24_black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp">
+
+                <TextView
+                    android:id="@+id/txt_DangKy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bevietnambold"
+                    android:text="Đăng ký"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/grayLine"/>
+        <TextView
+            android:id="@+id/txt_BatDau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnambold"
+            android:textSize="20sp"
+            android:text="Bắt đầu nào"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/txt_Phu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnamregular1"
+            android:textSize="16sp"
+            android:text="Tạo tài khoản để xem các lựa chọn hàng đầu của chúng tôi dành cho bạn!"
+            android:textColor="@color/grayText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtLoiDangKy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bevietnamitalic"
+            android:text=""
+            android:textColor="@color/warningText"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txt_SoDienThoai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nhập số điện thoại"
+                    android:fontFamily="@font/bevietnamregular1"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:inputType="phone"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone_24"
+                    android:layout_alignRight="@+id/txt_SoDienThoai"
+                    android:layout_marginTop="25px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txt_MatKhau"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nhập mật khẩu"
+                    android:fontFamily="@font/bevietnamregular1"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:inputType="textPassword"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_eye_24"
+                    android:layout_alignRight="@+id/txt_MatKhau"
+                    android:layout_marginTop="25px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập lại mật khẩu"
+                android:textSize="12sp"
+                android:fontFamily="@font/bevietnamregular1"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txt_MatKhauNhapLai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Nhập lại mật khẩu"
+                    android:fontFamily="@font/bevietnamregular1"
+                    android:textSize="18sp"
+                    android:ems="10"
+                    android:inputType="textPassword"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_eye_24"
+                    android:layout_alignRight="@+id/txt_MatKhauNhapLai"
+                    android:layout_marginTop="25px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/opacity">
+
+        <Button
+            android:id="@+id/btn_DangKy"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:backgroundTint="@color/blueButton"
+            android:fontFamily="@font/bevietnamregular1"
+            android:gravity="center|center_vertical"
+            android:text="Đăng ký"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            app:cornerRadius="3px"
+            tools:ignore="TouchTargetSizeCheck" />
+        <RelativeLayout
+            android:layout_below="@+id/btn_DangKy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:background="@color/opacity"
+            >
+            <Button
+                android:id="@+id/btn_QuenMatKhau"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="top"
+                android:fontFamily="@font/bevietnamregular1"
+                android:textAllCaps="false"
+                android:text="Quên mật khẩu"
+                android:background="@color/opacity"
+                android:textColor="@color/grayText"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:paddingLeft="5px"
+                />
+            <Button
+                android:id="@+id/btn_DangNhap"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/opacity"
+                android:fontFamily="@font/bevietnamregular1"
+                android:gravity="right"
+                android:paddingRight="0px"
+                android:text="Đăng nhập"
+                android:layout_alignParentRight="true"
+                android:textAllCaps="false"
+                android:textColor="@color/grayText"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65pt"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_up"
+
+        android:gravity="bottom" />
+
+</LinearLayout>
